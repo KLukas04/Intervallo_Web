@@ -1,18 +1,21 @@
-.outer-div{
-    background-color: green;
-    align-items: center;
+.parent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    text-align: left;
-    width: 60em;
-}
-.img-div{
-    background-color: indianred;
-    width: 30em;
-    margin: 30px;
-    border-radius: 16pt;
     align-items: center;
+    background-color: var(--tui-support-02);
+    border-radius: 16pt;
+    max-width: 800px;
+    margin: 20px;
 }
 
-img{
-    height: 55em;
+#img{
+    min-height: 25em;
+    max-height: 55em;
+}
+
+#content{
+    max-width: 300px;
+    padding: 20px;
 }
