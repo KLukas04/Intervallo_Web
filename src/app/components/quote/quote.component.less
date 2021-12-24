@@ -1,17 +1,20 @@
-.bg-box{
+.parent{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
     background-color: green;
-    margin: 1em;
-    font-size: 30px;
     border-radius: 25px;
+    max-width: 400px;
 }
 
-.quote{
-    line-height: 120%;
-    text-align: justify;
-    padding: 30px;
+#quote{
+    order: 1;
+    line-height: 1.2;
 }
 
-.author{
-    font-size: medium;
-    padding-right: 30px;
+#author{
+    order: 2;
+    text-align: right;
+    font-weight: bolder;
+    font-size: small;
 }
