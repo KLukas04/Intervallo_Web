@@ -1,14 +1,32 @@
-.outer-div{
-    padding: 30px;
-    padding-bottom: 0px;
-    justify-content: top;
+.parent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
     background-color: red;
 }
 
-h1{
-    padding: 10px;
+.child{
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.div-btn{
-    padding: 10px;
+#logo{
+    order: 1;
+    width: 100px;
+}
+
+#title{
+    order: 2;
+    font-size: xx-large;
+    justify-content: left;
+    padding: 0px;
+}
+
+#btn{
+    order: 3;
 }
