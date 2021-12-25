@@ -1,14 +1,48 @@
-img{
-    height: 32px;
-    width: 32px;
-}
-.outer-div{
-    padding-top: 30px;
-    padding-bottom: 50px;;
+.parent{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    background-color: var(--tui-primary-active);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+
+#insta{
+    order: 1;
+    width: 32px;
+    height: fit-content;
+}
+
+#links{
+    order: 2;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: large;
+    
 }
 
 a{
-    font-size: large;
-    color: lightpink;
+    color: var(--tui-support-10);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline var(--tui-support-10); //This colour is an example
+}
+
+@media (max-width: 499px) {
+    #links{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
