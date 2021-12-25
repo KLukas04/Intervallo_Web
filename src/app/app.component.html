@@ -1,30 +1,11 @@
 <tui-root>
-  <div class="context">
-    <div class="box">
-      <app-header></app-header>
-      <app-hero-page></app-hero-page>
-    </div>
-    <div class="area box">
-      <ul class="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="next">
-    <app-community-feedback></app-community-feedback>
-    <app-short-overview></app-short-overview>
-    <app-footer></app-footer>
-  </div>
+  <app-header></app-header>
+  <!-- <app-home></app-home>
+  <app-datenschutz></app-datenschutz>
+  <app-support></app-support>
+  <app-nutzungsbedingungen></app-nutzungsbedingungen> -->
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
 
 
 
