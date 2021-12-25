@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Intervallo_Web';
 
+  constructor(private router: Router) { }
+
+  hasRoute(route: string) {
+    console.log(route)
+    console.log(this.router.url)
+    console.log(this.router.url === route)
+    return this.router.url === route;
+  }
 
 }
 

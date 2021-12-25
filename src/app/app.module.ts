@@ -22,6 +22,8 @@ import { NutzungsbedingungenComponent } from './components/nutzungsbedingungen/n
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'support', component: SupportComponent },
+  { path: 'nutzungsbedingungen', component: NutzungsbedingungenComponent },
+  { path: 'datenschutz', component: DatenschutzComponent },
 ]
 
 @NgModule({
