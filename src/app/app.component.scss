@@ -2,6 +2,19 @@
 //     background-color: red;
 // }
 
+tui-root{
+  height: 100%;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.spacer{
+  flex-grow: 1
+}
+
 .context {
   width: 100%;
   position: relative;
