@@ -12,9 +12,6 @@ export class AppComponent {
   constructor(private router: Router) { }
 
   hasRoute(route: string) {
-    console.log(route)
-    console.log(this.router.url)
-    console.log(this.router.url === route)
     return this.router.url === route;
   }
 

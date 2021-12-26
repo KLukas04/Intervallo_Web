@@ -1,5 +1,6 @@
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { TuiRootModule, TuiButtonModule, TUI_BUTTON_OPTIONS } from "@taiga-ui/core";
+import { TuiRootModule, TuiButtonModule } from "@taiga-ui/core";
+import { TuiAccordionComponent, TuiAccordionModule } from "@taiga-ui/kit";
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -48,7 +49,8 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     TuiRootModule,
     BrowserAnimationsModule,
-    TuiButtonModule
+    TuiButtonModule,
+    TuiAccordionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
